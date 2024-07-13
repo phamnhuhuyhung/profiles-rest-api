@@ -11,3 +11,15 @@ class HelloApiView(APIView):
       'you are handsome'
     ]
     return Response({'message': 'Hello', 'an_apiview': an_apiview})
+  
+
+class GoodApiView(APIView):
+  """Test API GoodApiView"""
+  def get(self, request, format=None):
+    an_apiview = [
+      '1111111111',
+      'Is similar asdasdasdas',
+      'hello babe',
+      'you are handsome'
+    ]
+    return Response({'message': '200', 'an_apiview': an_apiview})
